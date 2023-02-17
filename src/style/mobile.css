@@ -1,0 +1,285 @@
+@media (min-width: 769px) {
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 99vw;
+        height: 99vh;
+    }
+
+
+    .vazio {
+        background-color: var(--blue-two);
+        height: 51%;
+        max-width: 20%;
+        max-height: 60%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(223, 230, 248);
+        justify-content: space-around;
+    }
+
+    .vazio div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vazio div img {
+        height: 90%;
+        width: 90%;
+        object-fit: scale-down;
+    }
+
+    .vazio h2 {
+        width: 90%;
+        height: 100%;
+        font-size: 20px;
+        transform: translateY(-1.85rem);
+        text-align: center;
+        margin-left: 0.7rem;
+    }
+
+    .login {
+        display: flex;
+        height: 50.9%;
+        width: 30%;
+        max-width: 30%;
+        max-height: 50.9%;
+        background-color: rgb(223, 230, 248);
+    }
+
+    .login form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        justify-content: space-around;
+    }
+
+    .login form label {
+        font-weight: 700;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        color: var(--blue-two);
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .paiDoInput {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    .name,
+    .password {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .paiDoInput span {
+        color: var(--blue-two);
+    }
+
+    .inputLogin {
+        width: 50%;
+        height: 7%;
+        padding: 5%;
+    }
+
+    .esqueceu {
+        font-weight: 200;
+        cursor: pointer;
+    }
+
+    .esqueceu:hover {
+        color: rgba(0, 53, 84, 0.5);
+    }
+
+    .containerBtn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn {
+        position: relative;
+        display: flex;
+        padding: 10px 91px;
+        color: black;
+        text-transform: uppercase;
+        color: rgba(0, 53, 84, 0.5);
+        letter-spacing: 2px;
+        justify-content: center;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: var(--blue-four);
+    }
+
+    .btn span {
+        display: block;
+        position: absolute;
+        background-color: var(--blue-six);
+    }
+
+    .btn span:nth-child(1) {
+        left: 0;
+        bottom: 0;
+        width: 1px;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+    }
+
+    .btn:hover span:nth-child(1) {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+    }
+
+    .btn span:nth-child(2) {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+
+    .btn:hover span:nth-child(2) {
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+
+
+    .btn span:nth-child(3) {
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+    }
+
+    .btn:hover span:nth-child(3) {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+    }
+
+    .btn span:nth-child(4) {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+
+    .btn:hover span:nth-child(4) {
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+
+
+    .containerModal {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(7px);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal {
+        display: flex;
+        background-color: var(--blue-two);
+        border-radius: 20px;
+        width: 30vw;
+        height: 50vh;
+        justify-content: space-around;
+        flex-direction: column;
+        border: ridge rgb(223, 230, 248);
+    }
+
+    .close {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: rgb(223, 230, 248);
+    }
+
+    .close i{
+        cursor: pointer;
+    }
+
+    .modal label {
+        color: rgb(223, 230, 248);
+        text-align: center;
+    }
+
+    .modal input {
+        width: 80%;
+        height: 7%;
+        padding: 7%;
+        align-self: center;
+        border-radius: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+
+    .btnModal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 10%;
+        align-self: center;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .btnModal:hover{
+        background-color: #8ec4df;
+    }
+}
